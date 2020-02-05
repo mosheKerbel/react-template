@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '../src/App';
+import App from '../../src/App';
 
 
 let container;
@@ -22,7 +22,7 @@ describe('Test App', () => {
     const button = container.querySelector('button');
 
     button.dispatchEvent(new MouseEvent('click', {bubbles: true}));
-
+    console.log(container.getDOMNode());
     expect(label.textContent).toEqual('Number of clicks 1');
   });
 });

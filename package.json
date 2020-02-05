@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config ./jest.config.json --watch",
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "jest --config ./jest.config.json --watch",
     "build": "webpack",
     "start": "webpack-dev-server",
     "storybook": "start-storybook -p 6006",

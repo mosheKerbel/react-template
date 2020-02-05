@@ -9,15 +9,15 @@ describe.only('Pup', () => {
 
       done();
 
-    }, 10000);
+    }, 5000);
   })
 
   test('render', async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({headless: false});
     const page = await browser.newPage();
     await page.goto('http://localhost:6006/iframe.html?id=buttons--bbb');
-    await page.screenshot({path: 'example.png'});
 
+    await page.click(`[data-hook="btn1"]`);
     await browser.close();
     expect(false).toEqual(false);
   });

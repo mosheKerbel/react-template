@@ -1,11 +1,10 @@
 import React from 'react';
-import {Button} from '@storybook/react/demo';
 
 export default {
   title: 'Buttons',
 };//
 
-export const BBB = () => <Button>Hello world</Button>;
+export const BBB = () => <button onClick={()=>console.log('yo!')} data-hook={"btn1"}>Hello world</button>;
 
 BBB.story = {
   name: 'normal',

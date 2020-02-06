@@ -6,7 +6,6 @@
   "scripts": {
     "test": "jest --config ./jest.unit.config.json --watch",
     "test:visual": "concurrently \"npm run storybook\"  \"jest --config ./jest.visual.config.json\"",
-    "test:watch": "jest --config ./jest.unit.config.json --watch",
     "build": "webpack",
     "start": "webpack-dev-server",
     "storybook": "start-storybook --ci -p 6006",

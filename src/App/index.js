@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <h1>This is a React app</h1>
-      <button onClick={()=> setClicksNum(clicksNum+1)}>first button</button>
+      <button data-hook={'btn1'} onClick={()=> setClicksNum(clicksNum+1)}>first button</button>
       <p>Number of clicks {clicksNum}</p>
     </div>
   );

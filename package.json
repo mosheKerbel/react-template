@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config ./jest.unit.config.json --watch",
+    "test": "npm run test:unit && npm run test:visual",
+    "test:unit": "jest --config ./jest.unit.config.json",
     "test:visual": "concurrently \"npm run storybook\"  \"jest --config ./jest.visual.config.json\"",
     "build": "webpack",
     "start": "webpack-dev-server",
